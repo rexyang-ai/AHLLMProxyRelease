@@ -3,8 +3,8 @@
 > 一个跑在你自己电脑上的 **多厂商 LLM 统一网关**。装完即用，桌面 GUI 管理，OpenAI 兼容出口，Codex / Cursor / Trae / Continue / OpenAI SDK 通吃。
 
 <p align="center">
-  <a href="https://github.com/rexyang-ai/AHLLMProxyRelease/releases/latest"><img alt="Latest Release" src="https://img.shields.io/github/v/release/rexyang-ai/AHLLMProxyRelease?label=下载&color=blue"></a>
-  <a href="https://github.com/rexyang-ai/AHLLMProxyRelease/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/rexyang-ai/AHLLMProxyRelease/total?label=累计下载"></a>
+    <a href="https://github.com/rexyang-ai/AHLLMProxyRelease/releases/latest"><img alt="Latest Release" src="https://img.shields.io/github/v/release/rexyang-ai/AHLLMProxyRelease?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&amp;color=blue"></a>
+  <a href="https://github.com/rexyang-ai/AHLLMProxyRelease/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/rexyang-ai/AHLLMProxyRelease/total?label=%E7%B4%AF%E8%AE%A1%E4%B8%8B%E8%BD%BD&amp;color=success"></a>
   <img alt="Platform" src="https://img.shields.io/badge/平台-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey">
   <img alt="License" src="https://img.shields.io/badge/License-MIT-green">
 </p>
