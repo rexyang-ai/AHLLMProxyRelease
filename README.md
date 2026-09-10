@@ -3,7 +3,12 @@
 > 统一多厂商大模型代理网关（桌面端）· 当前版本 **v0.5.4**
 
 一个跑在本地的「模型网关 + 管理控制台」：把 DeepSeek、阿里百炼、腾讯混元、火山方舟等多家上游，以及任意 OpenAI 兼容端点，统一成一套标准出口对外提供服务。桌面图形界面里完成模型商接入、代理模型编排、Token 统计、日志追踪与成本核算，所有数据保存在本地，开箱即用、可整目录迁移。
-
+<p align="center">
+    <a href="https://github.com/rexyang-ai/AHLLMProxyRelease/releases/latest"><img alt="Latest Release" src="https://img.shields.io/github/v/release/rexyang-ai/AHLLMProxyRelease?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&amp;color=blue"></a>
+  <a href="https://github.com/rexyang-ai/AHLLMProxyRelease/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/rexyang-ai/AHLLMProxyRelease/total?label=%E7%B4%AF%E8%AE%A1%E4%B8%8B%E8%BD%BD&amp;color=success"></a>
+  <img alt="Platform" src="https://img.shields.io/badge/平台-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey">
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-green">
+</p>
 ## 特性
 
 - **统一兼容出口**：对外提供 OpenAI 兼容的 `/v1/chat/completions`（含 SSE 流式）、`/v1/responses`、`/v1/embeddings`、`/v1/models`，以及 Anthropic 兼容的 `/v1/messages`
@@ -17,13 +22,6 @@
 - **配置导入导出**：代理模型 + 模型池 + 模型商配置可整包加密导出 / 复制分享，对方导入免密自动还原；重复配置可选跳过或覆盖
 - **多客户端 API 接入**：为不同客户端签发独立 Token，便于区分来源与回收
 - **数据本地、零外部依赖**：SQLite（WASM）落库，全部数据位于 `data/` 目录，绿色可迁移；第三方资源本地化，无外部 CDN
-
-<p align="center">
-    <a href="https://github.com/rexyang-ai/AHLLMProxyRelease/releases/latest"><img alt="Latest Release" src="https://img.shields.io/github/v/release/rexyang-ai/AHLLMProxyRelease?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&amp;color=blue"></a>
-  <a href="https://github.com/rexyang-ai/AHLLMProxyRelease/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/rexyang-ai/AHLLMProxyRelease/total?label=%E7%B4%AF%E8%AE%A1%E4%B8%8B%E8%BD%BD&amp;color=success"></a>
-  <img alt="Platform" src="https://img.shields.io/badge/平台-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey">
-  <img alt="License" src="https://img.shields.io/badge/License-MIT-green">
-</p>
 
 ---
 
