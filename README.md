@@ -1,6 +1,22 @@
 # AHLLMProxy
 
-> 一个跑在你自己电脑上的 **多厂商 LLM 统一网关**。装完即用，桌面 GUI 管理，OpenAI 兼容出口，Codex / Cursor / Trae / Continue / OpenAI SDK 通吃。
+> 统一多厂商大模型代理网关（桌面端）· 当前版本 **v0.5.4**
+
+一个跑在本地的「模型网关 + 管理控制台」：把 DeepSeek、阿里百炼、腾讯混元、火山方舟等多家上游，以及任意 OpenAI 兼容端点，统一成一套标准出口对外提供服务。桌面图形界面里完成模型商接入、代理模型编排、Token 统计、日志追踪与成本核算，所有数据保存在本地，开箱即用、可整目录迁移。
+
+## 特性
+
+- **统一兼容出口**：对外提供 OpenAI 兼容的 `/v1/chat/completions`（含 SSE 流式）、`/v1/responses`、`/v1/embeddings`、`/v1/models`，以及 Anthropic 兼容的 `/v1/messages`
+- **多模态透传**：生图（`/v1/images/generations`、`edits`、`variations`）、TTS（`/v1/audio/speech`）、STT（`/v1/audio/transcriptions`、`translations`）、视频（`/v1/videos/*`）等非对话端点直接透传
+- **多模型商接入**：内置多家常见厂商预设，也支持任意 OpenAI 兼容 Base URL；密钥本地加密存储
+- **回退链与自动选择**：代理模型可配置多个上游组成回退链（Fallback），失败自动切换；Sticky Session 保持会话粘滞；支持按能力（chat / 多模态 / 图像）过滤，避免把生图模型送进对话链路
+- **缓存亲和**：识别上游 prompt 缓存命中，统计缓存 Token 与节省成本
+- **全量日志与用量**：记录每次请求的请求体 / 响应体 / 流式帧 / Token / 耗时 / 状态，支持分类筛选、详情查看与复制
+- **成本核算**：内置模型价格库（可维护），按实际用量估算成本
+- **内置对话与文件管理**：控制台自带对话页（多模态、Markdown 渲染、附件）与文件页（对话上传附件集中管理，橱窗 / 列表双视图，预览、下载、批量删除）
+- **配置导入导出**：代理模型 + 模型池 + 模型商配置可整包加密导出 / 复制分享，对方导入免密自动还原；重复配置可选跳过或覆盖
+- **多客户端 API 接入**：为不同客户端签发独立 Token，便于区分来源与回收
+- **数据本地、零外部依赖**：SQLite（WASM）落库，全部数据位于 `data/` 目录，绿色可迁移；第三方资源本地化，无外部 CDN
 
 <p align="center">
     <a href="https://github.com/rexyang-ai/AHLLMProxyRelease/releases/latest"><img alt="Latest Release" src="https://img.shields.io/github/v/release/rexyang-ai/AHLLMProxyRelease?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&amp;color=blue"></a>
